@@ -1,0 +1,12 @@
+{
+  "name": "@chenbz/utils",
+  "version": "1.0.1",
+  "description": "工具类",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js"
+  },
+  "bugs": "2516224721@qq.com",
+  "author": "chenbz",
+  "license": "MIT"
+}
