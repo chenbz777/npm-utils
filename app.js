@@ -1,6 +1,8 @@
 
-const cdate = require('./utils/date');
+const date = require('./utils/date');
+const cookie = require('./utils/cookie');
 
 module.exports = {
-  cdate
+  date,
+  cookie,
 }

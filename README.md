@@ -9,17 +9,18 @@ npm i @chenbz/utils
 ## 使用
 
 ```js
-const { cdate } = require("@chenbz/utils");
+const { date, cookie } = require("@chenbz/utils");
 
 // 2022-03-29 12:00:00
-console.log(cdate.getDateTime());
+console.log(date.getDateTime());
+console.log(cookie.get('cookie'));
 ```
 
 
 
 ## 介绍
 
-### cdate
+### date
 
 | 函数名              | 描述                             |
 | ------------------- | -------------------------------- |
@@ -32,3 +33,13 @@ console.log(cdate.getDateTime());
 | getTimestamp10()    | 获取时间戳（秒级）               |
 | getDayOfYear()      | 获取当前时间是今年的第几天       |
 | getWeekOfYear()     | 获取当前时间是今年的第几周       |
+
+### cookie
+
+| 函数名    | 描述               |
+| --------- | ------------------ |
+| set()     | 存储cookie         |
+| get()     | 获取cookie         |
+| del()     | 删除cookie         |
+| getJSON() | 获取cookieJSON格式 |
+
