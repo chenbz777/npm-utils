@@ -9,10 +9,12 @@ npm i @chenbz/utils
 ## 使用
 
 ```js
-const { date } = require("@chenbz/utils");
+const { date, random } = require("@chenbz/utils");
 
 // 2022-03-29 12:00:00
 console.log(date.getDateTime());
+// D7fzbsOma9Wreqgf
+console.log(random.str());
 ```
 
 
@@ -32,3 +34,17 @@ console.log(date.getDateTime());
 | getTimestamp10()    | 获取时间戳（秒级）               |
 | getDayOfYear()      | 获取当前时间是今年的第几天       |
 | getWeekOfYear()     | 获取当前时间是今年的第几周       |
+
+### random
+
+| 函数名                 | 描述                     |
+| ---------------------- | ------------------------ |
+| random()               | 随机函数                 |
+| number()               | 随机数字                 |
+| lowerCase()            | 随机小写                 |
+| UpperCase()            | 随机大写                 |
+| lowerUpperCase()       | 随机大小写               |
+| numberLowerCase()      | 随机数字和小写           |
+| numberUpperCase()      | 随机数字和大写           |
+| numberLowerUpperCase() | 随机数字和大小写         |
+| str()                  | 随机数字和大小写(简写版) |
