@@ -1,6 +1,6 @@
 {
   "name": "@chenbz/utils",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "工具类",
   "main": "./lib",
   "types": "./lib/index.d.ts",
