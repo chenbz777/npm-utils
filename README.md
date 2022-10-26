@@ -9,12 +9,17 @@ npm i @chenbz/utils
 ## 使用
 
 ```js
-const { date, random } = require("@chenbz/utils");
+const { date, random, cache: Cache } = require("@chenbz/utils");
 
 // 2022-03-29 12:00:00
 console.log(date.getDateTime());
+
 // D7fzbsOma9Wreqgf
 console.log(random.str());
+
+const cache = new Cache()
+cache.set('name', 123);
+console.log(cache.get('name'));  // 123
 ```
 
 
