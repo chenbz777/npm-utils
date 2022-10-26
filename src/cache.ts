@@ -41,32 +41,21 @@ export default class LruCache {
   // 获取(标识)
   get(key: string): any {
 
-    const data = this.mapData.get(key) || null;
-
-    // 判断是否存在
-    if (data) {
-
-      // 判断是否存在过期时间
-      if (data.expirationTime !== -1) {
-        const currentTime = new Date();
-
-        // 过期了
-        if (currentTime.getTime() > data.expirationTime) {
-
-          this.mapData.delete(key);
-
-          return null;
-        } else {
-          // 未过期
-
-          return data.value;
-        }
-      }
-
-      return data.value;
+    if (!this.mapData.get(key)) {
+      return null;
     }
 
-    return null;
+    const data = this.mapData.get(key);
+
+    // 判断是否存在过期时间
+    if ((data.expirationTime !== -1) && (Date.now() > data.expirationTime)) {
+
+      this.mapData.delete(key);
+
+      return null;
+    }
+
+    return data.value;
   }
 
   // 判断是否存在(标识)
