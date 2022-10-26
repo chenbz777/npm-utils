@@ -1,3 +1,4 @@
 import random from './random';
 import date from "./date";
-export { random, date, };
+import cache from "./cache";
+export { random, date, cache, };
