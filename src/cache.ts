@@ -63,6 +63,11 @@ export default class LruCache {
     return this.mapData.has(key);
   }
 
+  // 删除(标识)
+  delete(key: string): void {
+    this.mapData.delete(key);
+  }
+
   // 获取长度
   size(): number {
     return this.mapData.size
